@@ -1,14 +1,45 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "mirikyoutube"
+  "api": {
+    "get-menu": {
+      "success": true,
+      "data": [
+          {
+              "id": 1,
+              "title": "Home",
+              "link": "\/",
+              "icon": "fa-home"
+          },
+          {
+              "id": 2,
+              "title": "Test",
+              "link": "\/test",
+              "icon": "fa-info-circle"
+          },
+          {
+              "id": 3,
+              "title": "Test 2",
+              "icon": "fa-cogs",
+              "submenu": [
+                  {
+                      "id": 31,
+                      "title": "Test 2",
+                      "link": "\/test2"
+                  }
+              ]
+          }
+      ]
+    },
+    "login": {
+      "success": true,
+      "data": {
+        "token": "TEST_TOKEN"
+      }
+    },
+    "register": {
+      "success": true,
+      "data": {
+        "token": "TEST_TOKEN"
+      }
+    }
   }
 }
